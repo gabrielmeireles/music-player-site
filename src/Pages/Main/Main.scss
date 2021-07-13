@@ -1,0 +1,53 @@
+@import "../../Styles/Colors.scss";
+
+.pages-main {
+  display: grid;
+  grid-template-columns: 50% 40%;
+  height: 100%;
+
+  .main-currentSong {
+    display: flex;
+    flex-direction: column;
+    padding: 2vw;
+    background-color: $main;
+    justify-content: space-between;
+
+    .currentSong-nowPlaying {
+      color: $whity;
+    }
+
+    .currentSong-content {
+      display: flex;
+      flex-direction: column;
+      margin: auto;
+      justify-content: space-around;
+
+      > p {
+        margin: 0;
+      }
+
+      .currentSong-image {
+        width: 20vw;
+        height: 20vw;
+        border-radius: 48px;
+        filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.3));
+        align-self: center;
+        margin-bottom: 48px;
+      }
+
+      .currentSong-title {
+        color: $whity;
+        font-size: 5vw;
+        align-self: center;
+        font-weight: bold;
+        margin-bottom: 16px;
+      }
+
+      .currentSong-artist {
+        color: $brownish;
+        font-size: 2vw;
+        align-self: center;
+      }
+    }
+  }
+}
